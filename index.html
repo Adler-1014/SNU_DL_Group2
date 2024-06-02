@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNU Big Data Fintech 8th DL_Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SNU Big Data Fintech 8th DL_Project</h1>
+      <div><button id="toggle-button">Start Detection</button></div>
+      <video id="webcam" autoplay playsinline width="640" height="480"></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
