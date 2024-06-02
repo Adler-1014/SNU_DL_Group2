@@ -32,8 +32,9 @@ async function detect() {
     ctx.rect(...prediction.bbox);
     ctx.lineWidth = 2;
     ctx.strokeStyle = "red";
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
     ctx.stroke();
+    ctx.font = "20px Arial"; // Set the font size larger
     ctx.fillText(
       `${prediction.class} (${Math.round(prediction.score * 100)}%)`,
       prediction.bbox[0],
